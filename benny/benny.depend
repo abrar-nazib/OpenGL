@@ -1,13 +1,15 @@
 # depslib dependency file v1.0
-1609840609 source:/home/abrar/programming/OpenGL/benny/main.cpp
+1609846449 source:/home/abrar/programming/OpenGL/benny/main.cpp
 	<iostream>
 	<GL/glew.h>
 	"display.h"
 
-1609840603 /home/abrar/programming/OpenGL/benny/include/display.h
+1609846381 /home/abrar/programming/OpenGL/benny/include/display.h
 	<string>
+	<SDL2/SDL.h>
 
-1609840598 source:/home/abrar/programming/OpenGL/benny/src/display.cpp
+1609846399 source:/home/abrar/programming/OpenGL/benny/src/display.cpp
 	"display.h"
+	<GL/glew.h>
 	<iostream>
 
