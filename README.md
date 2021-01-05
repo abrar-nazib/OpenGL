@@ -1,12 +1,12 @@
 # OpenGL Tutorial notes from benny
 
-[Link to the youtube playlist](https://www.youtube.com/playlist?list=PLHP-Z9TUFhhptXLqnmGdvLNrStOybEp1)
+[Link to the youtube playlist](https://www.youtube.com/playlist?list=PLHP-Z9TUFhhptXLqnmGdvLNrStOybEp1Q)
 
 ## Basic stuffs
 
 * Codeblocks needs linking GL, GLEW, SDL2
 
-## SDL library and its functions
+## **SDL**
 
 **Installation:** ```sudo apt-get install libsdl2-dev```
 
@@ -14,7 +14,7 @@
  Including process ```#include <SDL2/SDL.h>```
 
 * ```SDL_Window* window;``` pointer to window object(returned by SDL_CreateWindow())
-* ```SDL_GLContext m_glcontext``` context object returned by SDL_GL_CreateContext()
+* ```SDL_GLContext m_glcontext;``` context object returned by SDL_GL_CreateContext()
  
 ### SDL Functions and flags
 
@@ -56,13 +56,13 @@
   Is used to delete a window (Delete the one last one created first)
 
 
-## GLEW library amd its functions
+## **GLEW**
 
 **Installation:** ```sudo apt-get install libglew-dev```
 
 * Linking needed (as GLEW)
 
-## GLM Library and its functions
+## **GLM**
 
 **Installation:** ```sudo apt-get install libglm-dev```
 
