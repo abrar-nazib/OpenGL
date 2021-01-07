@@ -14,9 +14,10 @@
  Including process ```#include <SDL2/SDL.h>```
 
 * ```SDL_Window* window;``` pointer to window object(returned by SDL_CreateWindow())
+
 * ```SDL_GLContext m_glcontext;``` context object returned by SDL_GL_CreateContext()
- 
-### SDL Functions and flags
+  
+### **SDL** Functions & Flags
 
 * [**```int SDL_Init(Uint32 flags)```**](https://wiki.libsdl.org/SDL_Init)\
   Initializes SDL Library.
@@ -52,15 +53,39 @@
 * [**```void SDL_DestroyWindow(SDL_Window* window)```**](https://wiki.libsdl.org/SDL_DestroyWindow)\
   Is used to delete a window (Delete the one last one created first)
 
-* [**```void SDL_DestroyWindow(SDL_Window* window)```**](https://wiki.libsdl.org/SDL_DestroyWindow)\
-  Is used to delete a window (Delete the one last one created first)
+* [**```void SDL_GL_SwapWindow(SDL_Window* window)```**](https://wiki.libsdl.org/SDL_GL_SwapWindow)\
+  Is used for updating window with opengl rendering
 
+* [**```SDL_Event```**](https://wiki.libsdl.org/SDL_Event)\
+  Is used for Event Handling\
+  **Event-Types:** (returned from ```event.type```\
+  * ```SDL_QUIT``` quit event  
+
+* [**```int SDL_PollEvent(SDL_Event* event)```**](https://wiki.libsdl.org/SDL_PollEvent)\
+  Poll for currently pending event. Returns 1 if there is a pending event.\
+  Looks(polls) for the next event and then handles it\
+
+  ```c++
+     while (SDL_PollEvent(&test_event)) {//used inside while loops}
+  ```
 
 ## **GLEW**
+
+[Useful Link](https://www.khronos.org/registry/OpenGL-Refpages/gl4/)
 
 **Installation:** ```sudo apt-get install libglew-dev```
 
 * Linking needed (as GLEW)
+  Including process ```#include <GL/glew.h>```
+
+### **GLEW** Functions & Flags
+
+* [**```GLenum glewInit()```**](http://glew.sourceforge.net/basic.html)\
+  Will find every single opengl function OS supports. Returns ```GLEW_OK``` flag if everything is ok\
+  Actual implementation ```GLenum status = glewInit();```
+
+* [**```void glClearColor(GLfloat red,GLfloat green,GLfloat blue,GLfloat alpha);```**](https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/glClearColor.xhtml)\
+  Values specified [0,1]. Def: glClearColor — specify clear values for the color buffers
 
 ## **GLM**
 
