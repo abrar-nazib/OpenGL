@@ -6,8 +6,23 @@
 
 * Codeblocks needs linking GL, GLEW, SDL2
 
+## Basic GPU Workflow
+
+Modern GPUs Do three things:\
+```1.``` Draw filled triangles\
+```2.``` Interpolate between two existing values\
+```3.``` Parallel code execution\
+Image generation Process of modern GPUs: Workflow\
+**Data** -> **Processing(*Vertex Shader*)** -> **Resterization** -> **More Processing(*Fragment Shader*)** -> **Output**\
+**Data:** Instructions for graphics(assume Triangle)\
+**Processing(*Vertex Shader*):** Converting the instructions into a specific form(dots) that GPU can Understand and work with\
+**Resterization:** Connects the dots and fills the triangle.\
+**More Processing(*Fragment Shader*):** Works on every individual pixel of the triangle and determines its color.\
+**Output:** Stores the processed outputted pixels(doesn't show until full data is processed). All parallely.
+
 ## **SDL**
 
+[Link to SDL documentation](https://wiki.libsdl.org)\
 **Installation:** ```sudo apt-get install libsdl2-dev```
 
 * Linking needed (as SDL2).\
@@ -71,11 +86,11 @@
 
 ## **GLEW**
 
-[Useful Link](https://www.khronos.org/registry/OpenGL-Refpages/gl4/)
+[Link to opengl ref page(khronos.org)](https://www.khronos.org/registry/OpenGL-Refpages/gl4/)
 
 **Installation:** ```sudo apt-get install libglew-dev```
 
-* Linking needed (as GLEW)
+* Linking needed (as GLEW)\
   Including process ```#include <GL/glew.h>```
 
 ### **GLEW** Functions & Flags
