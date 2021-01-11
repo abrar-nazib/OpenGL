@@ -14,6 +14,7 @@ Modern GPUs Do three things:\
 ```3.``` Parallel code execution\
 Image generation Process of modern GPUs: Workflow\
 **Data** -> **Processing(*Vertex Shader*)** -> **Resterization** -> **More Processing(*Fragment Shader*)** -> **Output**\
+\
 **Data:** Instructions for graphics(assume Triangle)\
 **Processing(*Vertex Shader*):** Converting the instructions into a specific form(dots) that GPU can Understand and work with\
 **Resterization:** Connects the dots and fills the triangle.\

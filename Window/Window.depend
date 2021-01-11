@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1609879049 source:/home/abrar/programming/OpenGL/Window/main.cpp
+1610188821 source:/home/abrar/programming/OpenGL/Window/main.cpp
 	<iostream>
 	<GL/glew.h>
 	"display.h"
@@ -8,7 +8,7 @@
 	<string>
 	<SDL2/SDL.h>
 
-1609879062 source:/home/abrar/programming/OpenGL/Window/src/display.cpp
+1609879577 source:/home/abrar/programming/OpenGL/Window/src/display.cpp
 	"display.h"
 	<GL/glew.h>
 	<iostream>

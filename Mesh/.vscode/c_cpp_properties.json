@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/SDL2",
+                "/usr/include/GL",
+                "${workspaceFolder}/include",
+                "/usr/include/"
+            ],
+            "defines": [],
+            "compilerPath": "/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "clang-x64",
+            "compilerArgs": [
+                "-lGL -lGLEW -lSDL"
+            ]
+        }
+    ],
+    "version": 4
+}

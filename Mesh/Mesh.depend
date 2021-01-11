@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1610300527 source:/home/abrar/programming/OpenGL/Mesh/class/display.cpp
+	"display.h"
+	<GL/glew.h>
+	<iostream>
+
+1610302793 /home/abrar/programming/OpenGL/Mesh/include/display.h
+	<string>
+	<SDL2/SDL.h>
+
+1610300491 source:/home/abrar/programming/OpenGL/Mesh/class/shader.cpp
+	"shader.h"
+	<iostream>
+	<fstream>
+
+1610300458 /home/abrar/programming/OpenGL/Mesh/include/shader.h
+	<string>
+	<GL/glew.h>
+
+1610300527 source:/home/abrar/programming/OpenGL/Mesh/src/main.cpp
+	<iostream>
+	<GL/glew.h>
+	"display.h"
+	"shader.h"
+
+1610302594 source:/home/abrar/programming/OpenGL/Mesh/class/mesh.cpp
+	"mesh.h"
+
+1610302594 /home/abrar/programming/OpenGL/Mesh/include/mesh.h
+

@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1610307516 source:/home/abrar/programming/OpenGL/triangle/main.cpp
+	<GLFW/glfw3.h>
+
